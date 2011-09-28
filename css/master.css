@@ -1,0 +1,56 @@
+.topbar h3 a:hover, .topbar .brand:hover {
+  text-decoration:none;
+}
+
+.nav li a.homelink:hover {
+	color:#bada55;
+}
+.nav li a.bloglink:hover {
+	color:#f7ff4d;
+}
+.nav li a.aboutlink:hover {
+	color:#0099ff;
+}
+.nav li a.projectslink:hover {
+	color:#d4145a;
+}
+.nav li a.contactlink:hover {
+	color:#33cc66;
+}
+
+.topbar div > ul .menu-dropdown li a:hover,
+.nav .menu-dropdown li a:hover,
+.topbar div > ul .dropdown-menu li a:hover,
+.nav .dropdown-menu li a:hover {
+	color:#d4145a;
+}
+.border10 {
+	border:10px solid #000;
+}
+.mb20 {
+	margin-bottom:20px;
+}
+
+.topbar .brand {
+	background: transparent url('../images/logo.png') no-repeat scroll 20px 6px;
+	padding-left:50px;
+	text-transform:lowercase;
+}
+footer {
+	padding:10px 20px 0 20px;
+}
+
+article header h6 {
+	font-size:10px;
+	text-transform:none;
+	line-height:20px;
+}
+article header hr {
+	/* margin-top:5px; */
+}
+article footer {
+
+}
+#qrcode {
+	/* margin-top:9px; */
+}
