@@ -11,14 +11,50 @@ $(document).ready(function(){
 		$(this).attr('src',$(this).attr('data-origsrc'));
 	});
 });
-var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
-$(document).keydown(function(e) {
-  kkeys.push( e.keyCode );
-  if ( kkeys.toString().indexOf( konami ) >= 0 ){
-    $(document).unbind('keydown',arguments.callee);
-    $.getScript('http://www.cornify.com/js/cornify.js',function(){
-      cornify_add();
-      $(document).keydown(cornify_add);
-    });
-  }
+function earthquaker() {
+	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+	$(document).keydown(function(e) {
+		kkeys.push( e.keyCode );
+		if( kkeys.toString().indexOf( konami ) >= 0 ) {
+			$(document).unbind('keydown',arguments.callee);
+			$('#earthquake').css({
+				'top' : ( $(window).height() / 2 ) - ( $('#earthquake').height() / 2 ),
+				'left' : ( $(window).width() / 2 ) - ( $('#earthquake').width() / 2 )
+			}).show();
+			$('div, section, h1, h2, h3, h4, h5, h6, a, p, span, article, footer, header, img').filter(function(){return ( $(this).attr('class') != 'pixel' && $(this).attr('class') != 'earthquake' );}).jrumble({
+				rangeX: 5,
+				rangeY: 5,
+				rangeRot: 2,
+				rumbleEvent: 'constant',
+				reset: 5000
+			});
+			$('#earthquakereset').show();
+			/* RAINBOWS AND UNICORNS AND SUNSHINE
+			$.getScript('http://www.cornify.com/js/cornify.js',function(){
+				cornify_add();
+				$(document).keydown(cornify_add);
+			});
+			*/
+		}
+	});
+}
+earthquaker();
+
+$('#earthquakereset').live('click', function(){
+	console.log('reset');
+	$('#earthquakereset').hide();
+	$('div, section, h1, h2, h3, h4, h5, h6, a, p, span, article, footer, header, img')
+		.filter(function(){return ( $(this).attr('class') != 'pixel' && $(this).attr('class') != 'earthquake' && $(this).attr('class') != 'hiddenmessage' );})
+		.each(function(){
+			$(this).css({
+				'-webkit-transform' : 'rotate(0deg)',
+				'-moz-transform' : 'rotate(0deg)',
+				'-o-transform': 'rotate(0deg)',
+				'transform': 'rotate(0deg)',
+				'top' : '0',
+				'left' : '0'
+			});
+		});
+
+	earthquaker();
 });

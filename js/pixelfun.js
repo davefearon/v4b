@@ -9,6 +9,8 @@ var boxheight = 300;
 var pixelwidth = 10;
 var pixelheight = 10;
 var numpixels = ( boxwidth * boxheight ) / ( pixelwidth * pixelheight );
+var hiddenmessage = document.getElementById('hiddenmessage');
+hiddenmessage.style.width = boxwidth + 'px';
 
 var colors = [];
 function firstcolor() {
@@ -83,6 +85,7 @@ window.onresize = function(event) {
 	experiment.style.width = boxwidth + "px";
 	experiment.style.marginLeft = 0 - (marginleft/2) + "px";
 	numpixels = ( boxwidth * boxheight ) / ( pixelwidth * pixelheight );
+	hiddenmessage.style.width = boxwidth + 'px';
 	if( ww != windowwidth ) {
 		windowwidth = ww;
 		fillthebox();
@@ -90,11 +93,20 @@ window.onresize = function(event) {
 };
 
 $(document).ready(function(){
-	///*
+	$('.pixel').live('mouseenter', function(){
+		$(this).css({
+			//'background' : '#' + firstcolor()
+			'background' : 'transparent'
+		});
+		//$(this).remove();
+	});
+
+	/*
 	$('.pixel').each(function(i){
 		$(this).mouseenter(function(){
 			$(this).css({
-				'background' : '#' + firstcolor()
+				//'background' : '#' + firstcolor()
+				'background' : 'transparent'
 			});
 		});
 	});
