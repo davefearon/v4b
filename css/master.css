@@ -28,23 +28,21 @@ body {
 }
 
 .topbar h3 a:hover, .topbar .brand:hover {
-  text-decoration:none;
-}
-
-.nav li a.homelink:hover {
-	color:#bada55;
-}
-.nav li a.bloglink:hover {
+	text-decoration:none;
 	color:#f7ff4d;
 }
-.nav li a.aboutlink:hover {
-	color:#0099ff;
+
+.nav li a.bloglink:hover {
+	color:#f7ff4d;
 }
 .nav li a.projectslink:hover {
 	color:#d4145a;
 }
-.nav li a.contactlink:hover {
+.nav li a.labslink:hover {
 	color:#33cc66;
+}
+.nav li a.contactlink:hover {
+	color:#0099ff;
 }
 
 .topbar div > ul .menu-dropdown li a:hover,
@@ -112,4 +110,7 @@ article footer {
 	-o-transform: rotate(360deg);
 	transition: transform 4s ease;
 	transform: rotate(360deg);
+}
+.lc {
+	text-transform:lowercase;
 }
