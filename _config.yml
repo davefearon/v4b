@@ -1,0 +1,9 @@
+auto: true
+server_port: 4000
+markdown: maruku
+
+url: http://localhost:4000
+title: Dave Fearon [v4]
+author: Dave Fearon
+description: the personal site of Dave Fearon
+keywords: dave fearon, davefearon, dave, fearon, design, development

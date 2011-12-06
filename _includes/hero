@@ -1,0 +1,15 @@
+<!-- Main hero unit for a primary marketing message or call to action -->
+<section class="hero-unit">
+	<div id="hiddenmessage" class="hiddenmessage">
+		<p class="hiddenmessage">&#8984; + A&nbsp; the&nbsp; pixels</p>
+		<p class="hiddenmessage" style="color:#fff;">&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; B A</p>
+	</div>
+	<div id="experiment"></div>
+	<div id="dummyexperiment"><script src="js/pixelfun.js"></script></div>
+	<!--
+	<h1>Hello, world!</h1>
+	<p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+	<p><a class="btn primary large">Learn more &raquo;</a></p>
+	-->
+</section>
+<div id="earthquake" class="earthquakes"><span>E</span><span>A</span><span>R</span><span>T</span><span>H</span><span>Q</span><span>U</span><span>A</span><span>K</span><span>E</span><span>!</span></div>

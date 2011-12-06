@@ -1,0 +1,26 @@
+<footer>
+	<div class="pull-left" style="width:450px">
+		<div class="pull-left" style="margin-top:10px;">
+			<img data-altsrc="images/download.jpeg" data-origsrc="images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" src="images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" width="100" height="100" id="footerphoto" />
+		</div>
+		<div class="pull-left" style="margin-left:20px;">
+			<h3><em>stalk me</em></h3>
+			<p>
+				<strong>Twitter: </strong> <a href="http://twitter.com/#!/davefearon" target="_blank">@davefearon</a><br/>
+				<strong>Google+: </strong> <a href="http://plus.google.com/110888230809770008462" target="_blank">plus.google.com/110888230809770008462</a><br/>
+				<strong>Github: </strong> <a href="http://github.com/davefearon" target="_blank">github.com/davefearon</a><br/>
+				<strong>Email: </strong> <a href="#" target="_blank">dave [DOT] fearon [AT] gmail [DOT] com</a><br/>
+				<strong>Skype: </strong> <a href="#" target="_blank">dave.fearon</a><br/>
+				<strong>LinkedIn: </strong> <a href="http://linkedin.com/pub/dave-fearon/7/8a4/437" target="_blank">linkedin.com/pub/dave-fearon/7/8a4/437</a><br/>
+				<strong>Dribbble: </strong> <a href="http://dribbble.com/davefearon" target="_blank">dribbble.com/davefearon</a><br/>
+			</p>
+		</div>
+	</div>
+	<div class="pull-right" style="width:450px">
+		<h3><em>about me</em></h3>
+		<p>In case somehow you missed it, my name is Dave Fearon. Currently living in Ottawa, Canada. By day, I'm the Lead Software Developer at <a href="http://intouchinsight.com">In-Touch Insight Systems Inc.</a>. By night, you can usually find me snowboarding, playing hockey or soccer, creating various things, playing video games or developing the interwebs (even though I do it for a living, I enjoy it so much that I do it just for fun).</p>
+	</div>
+	<div style="clear:both;">
+		<p>Imagine. Design. Create. <span class="pull-right">&copy; Dave Fearon 2011</span></p>
+	</div>
+</footer>
