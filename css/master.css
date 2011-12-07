@@ -114,3 +114,9 @@ article footer {
 .lc {
 	text-transform:lowercase;
 }
+.uc {
+	text-transform:uppercase;
+}
+.capitalize {
+	text-transform:capitalize;
+}

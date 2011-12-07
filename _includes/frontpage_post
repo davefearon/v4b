@@ -1,0 +1,32 @@
+<article data-link="{{ post.url }}">
+	<header>
+		<span class="pull-right qrcode"></span>
+		<h2>{{ post.title }}</h2>
+		<h6>Posted on <time datetime="{{ post.date }}" pubdate>{{ post.date | date_to_string }}</time></h6>
+		<hr>
+	</header>
+	{% assign breakIndex = -1 %}
+	{% for element in post.content %}
+		{% if element contains '<!--more-->' %}
+			{% assign breakIndex = forloop.index %}
+		{% endif %}
+	{% endfor %}
+	
+	{% for element in post.content limit: breakIndex %}
+		{{ element }}
+	{% endfor %}
+
+	<footer>
+		<p class="tags">
+			Tags: 
+			{% for tag in post.tags %}
+				<a href="#" class="capitalize">{{ tag }}</a>
+				{% if forloop.last != true %},{% endif %}
+			{% endfor %}
+			<span class="readmore pull-right"><a href="{{ post.url }}">Read More</a></span>
+		</p>
+	</footer>
+<!-- echo $summary = substr($summary, 0, strrpos(substr($summary, 0, $limit), ' ')) . '...'; -->
+</article>
+
+<hr>

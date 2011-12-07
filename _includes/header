@@ -1,7 +1,7 @@
 <header class="topbar">
 	<div class="topbar-inner">
 		<div class="container-fluid">
-			<a class="brand" href="index.html">Dave Fearon</a>
+			<a class="brand" href="{{ site.url }}">Dave Fearon</a>
 			<ul class="nav">
 				<li><a class="bloglink" href="{{ site.url }}">blog</a></li>
 				<li class="dropdown" data-dropdown="dropdown">

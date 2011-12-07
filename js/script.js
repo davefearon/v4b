@@ -10,6 +10,26 @@ $(document).ready(function(){
 	}).mouseleave(function(){
 		$(this).attr('src',$(this).attr('data-origsrc'));
 	});
+	earthquaker();
+
+	$('#earthquakereset').live('click', function(){
+		console.log('reset');
+		$('#earthquakereset').hide();
+		$('div, section, h1, h2, h3, h4, h5, h6, a, p, span, article, footer, header, img')
+			.filter(function(){return ( $(this).attr('class') != 'pixel' && $(this).attr('class') != 'earthquake' && $(this).attr('class') != 'hiddenmessage' );})
+			.each(function(){
+				$(this).css({
+					'-webkit-transform' : 'rotate(0deg)',
+					'-moz-transform' : 'rotate(0deg)',
+					'-o-transform': 'rotate(0deg)',
+					'transform': 'rotate(0deg)',
+					'top' : '0',
+					'left' : '0'
+				});
+			});
+
+		earthquaker();
+	});
 });
 function earthquaker() {
 	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
@@ -38,23 +58,3 @@ function earthquaker() {
 		}
 	});
 }
-earthquaker();
-
-$('#earthquakereset').live('click', function(){
-	console.log('reset');
-	$('#earthquakereset').hide();
-	$('div, section, h1, h2, h3, h4, h5, h6, a, p, span, article, footer, header, img')
-		.filter(function(){return ( $(this).attr('class') != 'pixel' && $(this).attr('class') != 'earthquake' && $(this).attr('class') != 'hiddenmessage' );})
-		.each(function(){
-			$(this).css({
-				'-webkit-transform' : 'rotate(0deg)',
-				'-moz-transform' : 'rotate(0deg)',
-				'-o-transform': 'rotate(0deg)',
-				'transform': 'rotate(0deg)',
-				'top' : '0',
-				'left' : '0'
-			});
-		});
-
-	earthquaker();
-});

@@ -14,22 +14,22 @@
 
 	<!-- Le styles -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
-	<link href="/css/bootstrap.css" rel="stylesheet">
-	<link href="/css/master.css" rel="stylesheet">
+	<link href="{{ site.url }}/css/bootstrap.css" rel="stylesheet">
+	<link href="{{ site.url }}/css/master.css" rel="stylesheet">
 	
-	<script src="/js/jquery-1.6.4.min.js"></script>
-	<script src="/js/bootstrap-dropdown.js"></script>
+	<script src="{{ site.url }}/js/jquery-1.6.4.min.js"></script>
+	<script src="{{ site.url }}/js/bootstrap-dropdown.js"></script>
 
-	<script src="/js/qrcode.js"></script>
-	<script src="/js/html5-qrcode.js"></script>
-	<script src="/js/jrumble.1.1.mod.js"></script>
-	<script src="/js/script.js"></script>
+	<script src="{{ site.url }}/js/qrcode.js"></script>
+	<script src="{{ site.url }}/js/html5-qrcode.js"></script>
+	<script src="{{ site.url }}/js/jrumble.1.1.mod.js"></script>
+	<script src="{{ site.url }}/js/script.js"></script>
 
 	<!-- Le fav and touch icons -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico">
+	<link rel="apple-touch-icon" href="{{ site.url }}/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/images/apple-touch-icon-114x114.png">
 </head>
 <body>
 	
@@ -38,7 +38,7 @@
 	<section class="container-fluid">
 			
 			{{ content }}
-			{{ paginator }}
+			
 	</section>
 	
 	{% include footer %}

@@ -21,7 +21,14 @@
 		{% endfor %}
 
 		<footer>
-			<p class="tags">Tags: <a href="#">PHP</a>, <a href="#">Java</a> <span class="readmore pull-right"><a href="{{ post.url }}">Read More</a></span></p>
+			<p class="tags">
+				Tags: 
+				{% for tag in post.tags %}
+					<a href="#" class="capitalize">{{ tag }}</a>
+					{% if forLoop.index == 1 %},{% endif %}
+				{% endfor %}
+				<span class="readmore pull-right"><a href="{{ post.url }}">Read More</a></span>
+			</p>
 		</footer>
 	<!-- echo $summary = substr($summary, 0, strrpos(substr($summary, 0, $limit), ' ')) . '...'; -->
 	</article>
