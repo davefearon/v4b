@@ -1,0 +1,44 @@
+---
+layout: project
+title: GottaPlace.It
+category: post
+permalink: /projects/web/gottaplace-it.html
+published: true
+tags:
+- PHP
+- ruby
+- github
+---
+
+<p><a href="http://gottaplace.it" target="_blank">GottaPlace.It</a> was a project that I created while working on other projects. I was mocking up some sites using the templates that the designers had given me and decided that I didn't want to cut out a lot of the placeholder images and didn't want to specify a size in the css. So I got the idea to create an image placeholder service that took a couple variables and would return the image data.</p>
+
+<h3>History</h3>
+	<p>During lunch one day, the project was started and finished. I wrote it (originally) using PHP and the GD image library. The rest of my day doing mockups was more productive and I had time left to work on other things.</p>
+
+<!--more-->
+
+<h3>Goals</h3>
+	<ul>
+		<li>Easy to use</li>
+		<li>Customizable options</li>
+	</ul>
+
+<h3>Easy to Use</h3>
+	<p>Whatever I ended up with, I knew that I wanted it to be as easy to use as possible. For me, the logical solution was to be able to place the url of the service in an img tag as the src and be done with it. And if I wanted to change how the image looked, just change the url to suit.</p>
+
+<h3>Customizable Options</h3>
+	<p>To me, the greatest thing that the service could have is a good set of options that let people make the images their own and work best for whatever they wanted.</p>
+	<p>I started out with a couple key things I wanted to have as options:</p>
+	<ul>
+		<li>image size</li>
+		<li>image format</li>
+	</ul>
+	<p>But once I got those done, I decided that it needed something more. What would happen if you used the image in a spot where the default colors were the same as the rest of the design? I couldn't let that happen so I made it customizable. I started off with just the main color of the image but immediately ran into the situation where the text (where the default color is black) disappeared into a black image.</p>
+	<p>Since I was at it, I tossed in the ability to change the file format should you really like one over the other as well as the option to change the text on the image from the default image size to whatever tickled your pickle</p>
+
+<h3>Round 2!</h3>
+	<p>During December of 2010, I was big into working with Ruby and decided to rewrite the entire project using RoR. Really not sure why I decided to do this but I did.</p>
+
+	<h3>Github Repo (x2)</h3>
+		<p>If you wish to have a look at the first version (PHP based) of gottaplace.it, you can view it on github at <a href="https://github.com/davefearon/gpit" target="_blank">https://github.com/davefearon/gpit</a></p>
+		<p>For the second version (RoR based), you can view it on github as well at <a href="https://github.com/davefearon/gpi" target="_blank">https://github.com/davefearon/gpi</a></p>

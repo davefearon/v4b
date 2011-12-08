@@ -1,0 +1,10 @@
+<footer>
+	<h6>Stuff I Like</h6>
+	<div>
+		<a style="display:inline-block;" href="http://www.w3.org/html/logo/" target="_blank"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics-storage.png" width="114" height="32" alt="HTML5 Powered with CSS3 / Styling, Device Access, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Device Access, Semantics, and Offline &amp; Storage"></a>
+		<a style="display:inline-block;" href="http://github.com" target="_blank"><img src="{{ site.url }}/images/github_logo.png" width="72" height="32" title="github: social coding" alt="github: social coding"></a>&nbsp; &nbsp; &nbsp;
+		<a style="display:inline-block;" href="http://heroku.com" target="_blank"><img src="http://logos.heroku.com/images/heroku-logo-light-88x31.png" width="88" height="31" title="Heroku" alt="Heroku"></a>&nbsp; &nbsp; &nbsp;
+		<a style="display:inline-block;" href="http://rackspace.com" target="_blank"><img src="https://a248.e.akamai.net/assets.github.com/images/modules/footer/rackspace_logo.png?v2" width="38" height="36" title="Rackspace" alt="Rackspace"></a>
+	</div>
+	<p>&nbsp;</p>
+</footer>

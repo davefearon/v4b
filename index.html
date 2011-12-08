@@ -28,7 +28,7 @@ layout: default
 						{% if paginator.page == 2 %}
 							<li class="prev"><a href="{{ site.url }}">&larr; Previous</a></li>
 						{% else %}
-							<li class="prev"><a href="{{ site.url }}/page/{{ (i - 1) }}">&larr; Previous</a></li>
+							<li class="prev"><a href="{{ site.url }}/page/{{ paginator.previous_page }}">&larr; Previous</a></li>
 						{% endif %}
 					{% endif %}
 				{% endif %}
@@ -47,7 +47,7 @@ layout: default
 					{% if paginator.page == paginator.total_pages %}
 						<li class="next disabled"><a>Next &rarr;</a></li>
 					{% else %}
-						<li class="next"><a href="{{ site.url }}/page/{{ (i + 1) }}">Next &rarr;</a></li>
+						<li class="next"><a href="{{ site.url }}/page/{{ paginator.next_page }}">Next &rarr;</a></li>
 					{% endif %}
 				{% endif %}
 				

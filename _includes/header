@@ -7,10 +7,9 @@
 				<li class="dropdown" data-dropdown="dropdown">
 					<a class="projectslink dropdown-toggle" href="#projects">projects</a>
 					<ul class="dropdown-menu">
-						<li><a class="projectslink" href="#">web</a></li>
-						<li><a class="projectslink" href="#">print</a></li>
-						<li><a class="projectslink" href="#">experiments</a></li>
+						<li><a class="projectslink" href="{{ site.url }}/projects/web">web</a></li>
 						<li><a class="projectslink" href="#">photography</a></li>
+						<li><a class="projectslink" href="#">print</a></li>
 					</ul>
 				</li>
 				<li><a class="labslink" href="#labs">labs</a></li>

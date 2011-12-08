@@ -1,7 +1,10 @@
 <footer>
 	<div class="pull-left" style="width:450px">
 		<div class="pull-left" style="margin-top:10px;">
-			<img data-altsrc="{{ site.url }}/images/download.jpeg" data-origsrc="{{ site.url }}/images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" src="{{ site.url }}/images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" width="100" height="100" id="footerphoto" />
+			<img data-altsrc="{{ site.url }}/images/download.jpeg" data-origsrc="{{ site.url }}/images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" src="{{ site.url }}/images/eightbit-e5929973-c7fa-4918-9995-0cae641b56d3.png" width="100" height="100" id="footerphoto" /><br/>
+			<a href="http://www.w3.org/html/logo/">
+				<img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-device-semantics-storage.png" width="114" height="32" alt="HTML5 Powered with CSS3 / Styling, Device Access, Semantics, and Offline &amp; Storage" title="HTML5 Powered with CSS3 / Styling, Device Access, Semantics, and Offline &amp; Storage">
+			</a>
 		</div>
 		<div class="pull-left" style="margin-left:20px;">
 			<h3><em>stalk me</em></h3>
