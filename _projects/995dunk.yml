@@ -1,0 +1,15 @@
+description:
+  apparently i was playing around with ruby back this month as this is the third project i did within a month that is based on ruby
+  <a href="https://github.com/davefearon/dunk" target="_blank">https://github.com/davefearon/dunk</a>
+image:
+  url: /images/github_logo.png
+  title: Sample Project
+  alt: Sample Project
+layout: project
+published: false
+short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
+title:     Dunk
+website:   http://rinksi.de
+tags:
+  - ruby
+  - github

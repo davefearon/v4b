@@ -13,8 +13,6 @@ image:
   title: Sample Project
   alt: Sample Project
 layout: project
-project_description:
-  We did this project.
 published: true
 short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
 title:     Rinksi.de

@@ -15,6 +15,7 @@ module Jekyll
       {}.tap do |projects|
         Dir['_projects/*.yml'].each do |path|
           name   = File.basename(path, '.yml')
+          name = name[3,name.length]
           config = YAML.load(File.read(File.join(@base, path)))
           projects[name] = config if config['published']
         end
@@ -48,6 +49,7 @@ module Jekyll
         Dir.chdir('_projects')
         Dir["*.yml"].each do |path|
           name = File.basename(path, '.yml')
+          name = name[3,name.length]
           self.write_project_index(site, "_projects/#{path}", name)
         end
 

@@ -1,0 +1,24 @@
+description:
+  <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
+  <h3>The Story</h3>
+  <p>In the late fall of 2010, Warren and I had recently moved into a new place so we weren't really familiar with the area. We both play hockey and love a good game of shinny during the winter evenings but had no idea where the closest outdoor rink was (or was going to be) and what it was like.</p>
+  <p>Over a pint at the pub around the corner from our place, we struck upon the idea of creating a web based application that would show all the rinks in Ottawa on a map. We mostly wanted it for our own personal use, but figured there had to be other out there with the same wish. So after a couple "design sessions" (read "drunken idea shouting") at the pub where the idea originated, we had a plan.</p>
+  <p>Around the same time, </p>
+  <h3>The Contest</h3>
+  <p>Long story short, we didn't win</p>
+  <h3>Next Steps</h3>
+  <p>no idea</p>
+image:
+  url: /images/github_logo.png
+  title: Sample Project
+  alt: Sample Project
+layout: project
+published: false
+short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
+title:     Rinksi.de
+website:   http://rinksi.de
+tags:
+  - ruby
+  - javascript
+  - github
+  - collaboration

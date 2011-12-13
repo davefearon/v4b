@@ -3,6 +3,7 @@ layout: post
 ---
 
 <section class="content">
+	
 	{% if page.image %}
 	  <div class="span5 logo">
 	    <img src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
@@ -18,21 +19,4 @@ layout: post
 	  {% endif %}
 	</div>
 	
-	<div id="project-description" class="span16">
-	  <h3>What we did for {{ page.title }}:</h3>
-	  {{ page.project_description }}
-	</div>
-	
-	{% if page.endorsements %}
-	  <div id="endorsements" class="span16">
-	    <h3>What {{ page.title }} had to say about us:</h3>
-	
-	    {% for endorsement in page.endorsements %}
-	      <blockquote>
-	        {{ endorsement.body }}
-	        <small>{{ endorsement.from }}, {{ endorsement.role }}</small>
-	      </blockquote>
-	    {% endfor %}
-	  </div>
-	{% endif %}
 </section>

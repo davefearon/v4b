@@ -4,6 +4,8 @@
 			<a class="brand" href="{{ site.url }}">Dave Fearon</a>
 			<ul class="nav">
 				<li><a class="bloglink" href="{{ site.url }}">blog</a></li>
+				<li><a class="projectslink" href="{{ site.url }}/projects">projects</a></li>
+				<!--
 				<li class="dropdown" data-dropdown="dropdown">
 					<a class="projectslink dropdown-toggle" href="#projects">projects</a>
 					<ul class="dropdown-menu">
@@ -12,7 +14,8 @@
 						<li><a class="projectslink" href="#">print</a></li>
 					</ul>
 				</li>
-				<li><a class="labslink" href="#labs">labs</a></li>
+				-->
+				<li><a class="labslink" href="{{ site.url }}/labs">labs</a></li>
 				<li><a class="contactlink" href="{{ site.url }}/contact">contact</a></li>
 			</ul>
 			<!-- <p class="pull-right">Logged in as <a href="#">username</a></p> -->

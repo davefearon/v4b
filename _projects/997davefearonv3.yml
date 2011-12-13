@@ -1,0 +1,16 @@
+description:
+  open sourced my 3rd site version for shits and giggles
+  https://github.com/davefearon/df_v3
+image:
+  url: /images/github_logo.png
+  title: Sample Project
+  alt: Sample Project
+layout: project
+published: false
+short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
+title:     Personal Site V3
+website:   http://rinksi.de
+tags:
+  - PHP
+  - javascript
+  - github

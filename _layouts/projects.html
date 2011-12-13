@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects We've Worked On
+title: Projects
 ---
 
 {% include hero %}
@@ -9,7 +9,8 @@ title: Projects We've Worked On
 
 <section class="content">
 	
-	<p>Check out what I've worked on</p>
+	<h2 class="lc"><em>projects</em></h2>
+	<hr>
 
 	{% for project in page.projects %}
 		<article data-link="{{ site.url }}/projects/{{ project[0] }}">
@@ -28,6 +29,8 @@ title: Projects We've Worked On
 						<span class="readmore pull-right"><a href="{{ site.url }}/projects/{{ project[0] }}">Read More</a></span>
 				</p>
 			</footer>
+		</article>
+		<hr>
 	{% endfor %}
 
 </section>

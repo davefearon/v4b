@@ -1,0 +1,22 @@
+description:
+  <p>
+    -school project turned interesting social experiment
+    -viral madness
+    -things i learned
+      -people will share very deep secrets if left anonymous
+      -people want to be contacted
+      -people are idiots
+  </p>
+image:
+  url: /images/github_logo.png
+  title: Sample Project
+  alt: Sample Project
+layout: project
+published: false
+short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
+title:     Tell Me What You Believe Now
+website:   http://rinksi.de
+tags:
+  - PHP
+  - javascript
+  - school
