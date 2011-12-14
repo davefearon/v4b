@@ -5,9 +5,9 @@ description:
   <p>Over a pint at the pub around the corner from our place, we struck upon the idea of creating a web based application that would show all the rinks in Ottawa on a map. We mostly wanted it for our own personal use, but figured there had to be other out there with the same wish. So after a couple "design sessions" (read "drunken idea shouting") at the pub where the idea originated, we had a plan.</p>
   <p>Around the same time, </p>
   <h3>The Contest</h3>
-  <p>Long story short, we didn't win</p>
+  <p>Long story short, we didn't win. We're we disappointed? Of coursewe were! But in the long run we enjoyed working on it.</p>
   <h3>Next Steps</h3>
-  <p>no idea</p>
+  <p>We had a bunch of features that we wanted to put but ran out of time before the contest deadline. Things like allowing other cities, indoor arenas, the ability to "check in" at a rink and reaching out to the ice maintenance volunteers to get them using a custom update page for their rink. I also have been toying with the idea of creating native apps for various platforms (although to be fair it would probably end up being iOS only since that's what we both have). Only time will tell.</p>
 image:
   url: /images/github_logo.png
   title: Sample Project
