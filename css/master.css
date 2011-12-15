@@ -2,6 +2,9 @@ body {
 	padding-top: 60px;
 	font-family: 'Ubuntu', sans-serif;
 }
+image {
+	background: transparent url('../images/checker.png') repeat fixed 0 0;
+}
 #experiment {
 	/* width:100%; */
 	height:300px;
