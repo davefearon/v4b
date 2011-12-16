@@ -1,6 +1,6 @@
 module Jekyll
   
-  CACHE_FILE_NAME = "cache.appcache"
+  CACHE_FILE_NAME = "manifest.appcache"
   CACHE_TEMPLATE_START = "CACHE MANIFEST\n"
   CACHE_TEMPLATE_FILES = "CACHE:\n"
   CACHE_TEMPLATE_FALLBACK = "FALLBACK:\n"
