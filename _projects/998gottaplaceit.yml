@@ -30,6 +30,8 @@ image:
   alt: Sample Project
 layout: project
 published: true
+datetime: 2009-07-01 00:00:00 -0500
+date: 01 Jul 2011
 short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
 title:     GottaPlace.It
 website:   http://gottaplace.it

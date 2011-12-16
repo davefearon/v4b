@@ -17,7 +17,7 @@ title: Projects
 			<header>
 				<span class="pull-right qrcode"></span>
 				<h2>{{ project[1].title }}</h2>
-				<h6>Posted on <time datetime="" pubdate>time</h6>
+				<h6>Posted on <time datetime="{{ project[1].datetime }}" pubdate>{{ project[1].date }}</h6>
 			</header>
 			<p>{{ project[1].short }}</p>
 			<footer>

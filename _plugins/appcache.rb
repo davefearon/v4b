@@ -75,10 +75,14 @@ module Jekyll
     end
     
     def fetch_projects(site, filestring)
-      Dir['_projects/*.yml'].each do |path|
-        name   = File.basename(path, '.yml')
-        name = name[3,name.length]
-        filestring += "/projects/" + name + "/index.html\n"
+      {}.tap do |projects|
+        Dir['_projects/*.yml'].each do |path|
+          name   = File.basename(path, '.yml')
+          name = name[3,name.length]
+          mybase = File.dirname(File.dirname(__FILE__)) + "/"
+          config = YAML.load(File.read(File.join(mybase, path)))
+          filestring += "/projects/" + name + "/index.html\n" if config['published']
+        end
       end
       
       filestring
