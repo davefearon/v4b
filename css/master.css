@@ -127,6 +127,13 @@ article footer {
 	text-transform:capitalize;
 }
 
+#map_canvas {
+	position:relative;
+	top:-20px;
+	left:-20px;
+	display:block;
+}
+
 /* ==|== non-semantic helper classes ========================================
    ========================================================================== */
 

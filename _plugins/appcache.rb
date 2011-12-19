@@ -68,7 +68,7 @@ module Jekyll
     
     def fetch_pages(site, filestring)
       site.pages.each do |page|
-        filestring += ( page.full_path_to_source + "\n" )
+        filestring += ( page.full_path_to_source + "\n" ) if page.full_path_to_source != "/htaccess"
       end
       
       filestring
