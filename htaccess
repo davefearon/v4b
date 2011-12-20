@@ -13,13 +13,10 @@ permalink: .htaccess
 #   perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/
 #   Sample .htaccess file of CMS MODx: modxcms.com
 
-
 ###
 ### If you run a webserver other than apache, consider:
 ### github.com/paulirish/html5-boilerplate-server-configs
 ###
-
-
 
 # ----------------------------------------------------------------------
 # Better website experience for IE users
@@ -37,7 +34,6 @@ permalink: .htaccess
     </FilesMatch>
 </IfModule>
 
-
 # ----------------------------------------------------------------------
 # Cross-domain AJAX requests
 # ----------------------------------------------------------------------
@@ -49,8 +45,6 @@ permalink: .htaccess
 #  <IfModule mod_headers.c>
 #    Header set Access-Control-Allow-Origin "*"
 #  </IfModule>
-
-
 
 # ----------------------------------------------------------------------
 # Webfont access
@@ -66,12 +60,9 @@ permalink: .htaccess
   </IfModule>
 </FilesMatch>
 
-
-
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
 # ----------------------------------------------------------------------
-
 
 # JavaScript
 #   Normalize to standard type (it's sniffed in IE anyways) 
@@ -109,8 +100,6 @@ AddType application/x-xpinstall        xpi
 AddType application/octet-stream       safariextz
 AddType text/x-vcard                   vcf
 
-
-
 # ----------------------------------------------------------------------
 # Allow concatenation from within specific js and css files 
 # ----------------------------------------------------------------------
@@ -135,7 +124,6 @@ AddType text/x-vcard                   vcf
 #  AddOutputFilterByType INCLUDES text/css
 #  SetOutputFilter INCLUDES
 #</FilesMatch>
-
 
 # ----------------------------------------------------------------------
 # Gzip compression
@@ -182,8 +170,6 @@ AddType text/x-vcard                   vcf
   AddOutputFilterByType DEFLATE image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
 </IfModule>
 </IfModule>
-
-
 
 # ----------------------------------------------------------------------
 # Expires headers (for better cache control)
@@ -252,8 +238,6 @@ AddType text/x-vcard                   vcf
   
 </IfModule>
 
-
-
 # ----------------------------------------------------------------------
 # ETag removal
 # ----------------------------------------------------------------------
@@ -268,8 +252,6 @@ AddType text/x-vcard                   vcf
 #   developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
-
-
 # ----------------------------------------------------------------------
 # Stop screen flicker in IE on CSS rollovers
 # ----------------------------------------------------------------------
@@ -282,8 +264,6 @@ FileETag None
 # BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
 # BrowserMatch "Opera" !brokenvary
 # SetEnvIf brokenvary 1 force-no-vary
-
-
 
 # ----------------------------------------------------------------------
 # Cookie setting from iframes
@@ -298,8 +278,6 @@ FileETag None
 #   </Location>
 # </IfModule>
 
-
-
 # ----------------------------------------------------------------------
 # Start rewrite engine
 # ----------------------------------------------------------------------
@@ -311,8 +289,6 @@ FileETag None
   Options +FollowSymlinks
   RewriteEngine On
 </IfModule>
-
-
 
 # ----------------------------------------------------------------------
 # Suppress or force the "www." at the beginning of URLs
@@ -443,6 +419,23 @@ Options -Indexes
 # includes directories used by version control systems such as Subversion or Git.
 <IfModule mod_rewrite.c>
   RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+# Redirect everything to Jekyll
+<IfModule mod_rewrite.c>
+  # Map http://www.example.com to /jekyll.
+  RewriteRule ^$ /jekyll/ [L]
+
+  # Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/jekyll/
+  RewriteRule ^(.*)$ /jekyll/$1
+
+  # Add trailing slash to directories within jekyll
+  # This does not expose the internal URL.
+  RewriteCond %{SCRIPT_FILENAME} -d
+  RewriteRule ^jekyll/(.*[^/])$ http://davefearon.com/$1/ [R=301]
 </IfModule>
 
 
