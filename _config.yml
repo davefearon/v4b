@@ -5,6 +5,7 @@ pagination: true
 paginate: 2
 
 url: http://localhost:4000
+#url: http://davefearon.com
 title: Dave Fearon [v4]
 author: Dave Fearon
 description: the personal site of Dave Fearon

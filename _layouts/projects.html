@@ -15,8 +15,8 @@ title: Projects
 	{% for project in page.projects %}
 		<article data-link="{{ site.url }}/projects/{{ project[0] }}">
 			<header>
-				<span class="pull-right qrcode"></span>
-				<h2>{{ project[1].title }}</h2>
+				<span class="pull-right qrcode-no"></span>
+				<h2><a href="{{ site.url }}/projects/{{ project[0] }}">{{ project[1].title }}</a></h2>
 				<h6>Posted on <time datetime="{{ project[1].datetime }}" pubdate>{{ project[1].date }}</h6>
 			</header>
 			<p>{{ project[1].short }}</p>

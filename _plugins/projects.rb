@@ -62,18 +62,18 @@ module Jekyll
       portfolio = PortfolioIndex.new(site, site.source, "/projects")
       portfolio.render(site.layouts, site.site_payload)
       portfolio.write(site.dest)
-
+    
       site.pages << portfolio
       site.static_files << portfolio
     end
-
+    
     def write_project_index(site, path, name)
       project = ProjectIndex.new(site, site.source, "/projects/#{name}", path)
-
+    
       if project.data['published']
         project.render(site.layouts, site.site_payload)
         project.write(site.dest)
-
+    
         site.pages << project
         site.static_files << project
       end

@@ -81,7 +81,7 @@ module Jekyll
           name = name[3,name.length]
           mybase = File.dirname(File.dirname(__FILE__)) + "/"
           config = YAML.load(File.read(File.join(mybase, path)))
-          filestring += "/projects/" + name + "/index.html\n" if config['published']
+          filestring += "projects/" + name + "/index.html\n" if config['published']
         end
       end
       
@@ -90,7 +90,7 @@ module Jekyll
     
     def fetch_css(site, filestring)
       Dir['css/*.css'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += "" + path + "\n"
       end
       
       filestring
@@ -98,7 +98,7 @@ module Jekyll
     
     def fetch_js(site, filestring)
       Dir['js/*.js'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += "" + path + "\n"
       end
       
       filestring
@@ -106,7 +106,7 @@ module Jekyll
     
     def fetch_images(site, filestring)
       Dir['images/*.*'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += "" + path + "\n"
       end
       
       filestring

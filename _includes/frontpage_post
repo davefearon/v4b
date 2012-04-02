@@ -1,13 +1,15 @@
 <article data-link="{{ post.url }}">
 	<header>
-		<span class="pull-right qrcode"></span>
+		<span class="pull-right qrcode-no"></span>
 		<h2>{{ post.title }}</h2>
 		<h6>Posted on <time datetime="{{ post.date }}" pubdate>{{ post.date | date_to_string }}</time></h6>
 		<hr>
 	</header>
 	
 	{{ post.preview }}
-
+	
+	<hr>
+	
 	<footer>
 		<p class="tags">
 			Tags: 

@@ -1,12 +1,23 @@
-body {
-	padding-top: 60px;
-	font-family: 'Ubuntu', sans-serif;
-}
 image {
 	background: transparent url('../images/checker.png') repeat fixed 0 0;
 }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+.navbar .nav {
+  position: relative;
+  right: 0;
+  display: block;
+  float: right;
+  margin: 0 -20px 0 0;
+}
+.hero-unit {
+	background-color: transparent;
+	padding: 5px;
+  	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
 
 #experiment {
 	/* width:100%; */
@@ -33,7 +44,7 @@ image {
 	background: #ccc;
 }
 
-.topbar h3 a:hover, .topbar .brand:hover {
+.navbar h3 a:hover, .navbar .brand:hover {
 	text-decoration:none;
 	color:#f7ff4d;
 }
@@ -51,9 +62,9 @@ image {
 	color:#0099ff;
 }
 
-.topbar div > ul .menu-dropdown li a:hover,
+.navbar div > ul .menu-dropdown li a:hover,
 .nav .menu-dropdown li a:hover,
-.topbar div > ul .dropdown-menu li a:hover,
+.navbar div > ul .dropdown-menu li a:hover,
 .nav .dropdown-menu li a:hover {
 	color:#d4145a;
 }
@@ -64,13 +75,35 @@ image {
 	margin-bottom:20px;
 }
 
-.topbar .brand {
+.navbar .brand {
 	background: transparent url('../images/logo.png') no-repeat scroll 20px 6px;
 	padding-left:50px;
 	text-transform:lowercase;
 }
 footer {
-	padding:10px 20px 0 20px;
+	padding:0px 20px 0 20px;
+}
+.mainfooter, .mainsubfooter {
+	padding-top:10px;
+	border-top:1px solid #eee;
+}
+.mainsubfooter {
+	margin-bottom:-9px;
+}
+.mainsubfooter a {
+	opacity:0.5;
+	margin:5px;
+}
+
+.noshow {
+	width:0px;
+	height:0px;
+	line-height:0px;
+	font-size:0px;
+}
+
+article header h2 a, article header h2 a:hover, article header h2 a:visited, article header h2 a:active {
+	color:#333;
 }
 
 article header h6 {
@@ -132,6 +165,16 @@ article footer {
 	top:-20px;
 	left:-20px;
 	display:block;
+}
+
+.container-fluid > .sidebar {
+  float: right;
+  /* width: 400px; */
+	margin-left:20px;
+}
+
+.ml20 {
+	margin-left:20px;
 }
 
 /* ==|== non-semantic helper classes ========================================

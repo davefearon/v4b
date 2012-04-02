@@ -423,19 +423,19 @@ Options -Indexes
 
 # Redirect everything to Jekyll
 <IfModule mod_rewrite.c>
-  # Map http://www.example.com to /jekyll.
-  RewriteRule ^$ /jekyll/ [L]
-
-  # Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} !^/jekyll/
-  RewriteRule ^(.*)$ /jekyll/$1
-
-  # Add trailing slash to directories within jekyll
-  # This does not expose the internal URL.
-  RewriteCond %{SCRIPT_FILENAME} -d
-  RewriteRule ^jekyll/(.*[^/])$ http://davefearon.com/$1/ [R=301]
+  # # Map http://www.example.com to /jekyll.
+  # RewriteRule ^$ /jekyll/ [L]
+  # 
+  # # Map http://www.example.com/x to /jekyll/x unless there is a x in the web root.
+  # RewriteCond %{REQUEST_FILENAME} !-f
+  # RewriteCond %{REQUEST_FILENAME} !-d
+  # RewriteCond %{REQUEST_URI} !^/jekyll/
+  # RewriteRule ^(.*)$ /jekyll/$1
+  # 
+  # # Add trailing slash to directories within jekyll
+  # # This does not expose the internal URL.
+  # RewriteCond %{SCRIPT_FILENAME} -d
+  # RewriteRule ^jekyll/(.*[^/])$ http://davefearon.com/$1/ [R=301]
 </IfModule>
 
 

@@ -1,7 +1,9 @@
 $(document).ready(function(){
+	var ww = $(window).width();
+	var mcw = ww < 980 ? ( ww < 768 ? ( ww - 40 ) : ww ) : ww;
 	$('#map_canvas').css({
-		width: $(window).width(),
-		height: $(window).height() - $('.topbar').height() - $('.mainfooter').height() - $('.mainsubfooter').height() - 70
+		width: mcw,
+		height: $(window).height() - $('.navbar').height() - $('.mainfooter').height() - $('.mainsubfooter').height() - 70
 	});
 	map_initialize();
 });
