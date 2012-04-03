@@ -9,9 +9,9 @@ description:
   <h3>Next Steps</h3>
   <p>We had a bunch of features that we wanted to put but ran out of time before the contest deadline. Things like allowing other cities, indoor arenas, the ability to "check in" at a rink and reaching out to the ice maintenance volunteers to get them using a custom update page for their rink. I also have been toying with the idea of creating native apps for various platforms (although to be fair it would probably end up being iOS only since that's what we both have). Only time will tell.</p>
 image:
-  url: /images/github_logo.png
-  title: Sample Project
-  alt: Sample Project
+  url: /images/featured/rinkside.png
+  title: Rinksi.de
+  alt: Rinksi.de
 layout: project
 published: true
 datetime: 2010-12-01 00:00:00 -0500

@@ -83,6 +83,9 @@ image {
 footer {
 	padding:0px 20px 0 20px;
 }
+.mainfooter {
+	margin-top:15px;
+}
 .mainfooter, .mainsubfooter {
 	padding-top:10px;
 	border-top:1px solid #eee;
@@ -124,14 +127,13 @@ article footer {
 
 #earthquake {
 	display:none;
-	position:absolute;
-	top:0;
-	left:0;
 	z-index:9999;
-	font-size:150px;
+	font-size:11em;
 	text-transform:uppercase;
 	color:#f00;
 	font-weight:bold;
+	margin:0 auto;
+	text-align:center;
 }
 #earthquakereset {
 	cursor:pointer;

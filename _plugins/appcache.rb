@@ -109,6 +109,10 @@ module Jekyll
           filestring += "" + path + "\n"
       end
       
+      Dir['images/featured/*.*'].each do |path|
+          filestring += "" + path + "\n"
+      end
+      
       filestring
     end
     

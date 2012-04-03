@@ -25,9 +25,9 @@ description:
   <p>If you wish to have a look at the first version (PHP based) of gottaplace.it, you can view it on github at <a href="https://github.com/davefearon/gpit" target="_blank">https://github.com/davefearon/gpit</a></p>
   <p>For the second version (RoR based), you can view it on github as well at <a href="https://github.com/davefearon/gpi" target="_blank">https://github.com/davefearon/gpi</a></p>
 image:
-  url: /images/github_logo.png
-  title: Sample Project
-  alt: Sample Project
+  url: /images/featured/gottaplaceit.png
+  title: GottaPlace.it
+  alt: GottaPlace.it
 layout: project
 published: true
 datetime: 2009-07-01 00:00:00 -0500
