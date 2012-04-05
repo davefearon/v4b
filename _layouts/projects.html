@@ -23,13 +23,10 @@ title: Projects
 			<hr>
 			<footer>
 				<p class="tags">
-					&nbsp;
-					<!--
 					Tags:
 						{% for tag in project[1].tags %}
-							<a href="#" class="capitalize">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+							<a href="/tag/{{ tag }}" class="capitalize">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 						{% endfor %}
-					-->
 						<span class="readmore pull-right"><a href="{{ site.url }}/projects/{{ project[0] }}">Read More</a></span>
 				</p>
 			</footer>

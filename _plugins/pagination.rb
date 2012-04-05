@@ -3,6 +3,7 @@ module Jekyll
   class Pagination < Generator
     # This generator is safe from arbitrary code execution.
     safe true
+    priority :normal
 
     # Generate paginated pages if necessary.
     #

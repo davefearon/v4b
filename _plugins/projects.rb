@@ -37,7 +37,7 @@ module Jekyll
 
   class GeneratePortfolio < Generator
     safe true
-    priority :normal
+    priority :high
 
     def generate(site)
       self.write_portfolio(site)

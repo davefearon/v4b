@@ -1,4 +1,4 @@
-<section class="sidebar">
+<section class="sidebar" id="sidebar">
 	<h2><em>featured</em></h2>
 	<hr>
 	<div class="border10 mb20"><a href="{{ site.url }}/projects/quickqrme"><img src="/images/featured/quickqrme.png"/></a></div>

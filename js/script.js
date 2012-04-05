@@ -31,6 +31,15 @@ $(document).ready(function(){
 		earthquaker();
 	});
 });
+
+function resizestuff() {
+	$('#sidebar').css({
+		height: $('body').height() - $('.mainfooter').height() - $('.mainsubfooter').height()
+	});
+}
+
+resizestuff();
+
 function earthquaker() {
 	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 	$(document).keydown(function(e) {
