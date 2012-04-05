@@ -175,8 +175,25 @@ article footer {
 	margin-left:20px;
 }
 
+.sidebar {
+	width:400px;
+}
+
+.sidebar div, .sidebar div a {
+	height:130px;
+}
+
 .ml20 {
 	margin-left:20px;
+}
+
+.projectimage {
+	border:10px solid #000;
+	height:300px;
+	background-repeat:no-repeat;
+	background-size:auto auto;
+	background-position:center center;
+	background-color:#000;
 }
 
 /* ==|== non-semantic helper classes ========================================

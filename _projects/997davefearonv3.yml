@@ -2,11 +2,13 @@ description:
   <p>The third version of my personal site was designed to feel like a Flash site without actually using Flash.</p><p>I wanted to make sure that the site could run on every device so I decided to emulate some of the more widely used Flash animations that are common to Flash-based sites using javascript.</p>
   <p>If you really felt like taking a look, I open sourced the code for shits and giggles and you can check it out at <a href="https://github.com/davefearon/df_v3" target="_blank">https://github.com/davefearon/df_v3</a>.</p>
 image:
-  url: /images/featured/v3.png
+  url: /images/projects/v3.png
   title: v3
   alt: v3
 layout: project
 published: true
+datetime: 2010-12-01 00:00:00 -0500
+date: 01 Dec 2010
 short:     <p>The third version of my personal site was designed to feel like a Flash site without actually using Flash.</p>
 title:     Personal Site v3
 website:   http://davefearon.com/v3

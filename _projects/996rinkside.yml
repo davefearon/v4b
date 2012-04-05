@@ -9,13 +9,13 @@ description:
   <h3>Next Steps</h3>
   <p>We had a bunch of features that we wanted to put but ran out of time before the contest deadline. Things like allowing other cities, indoor arenas, the ability to "check in" at a rink and reaching out to the ice maintenance volunteers to get them using a custom update page for their rink. I also have been toying with the idea of creating native apps for various platforms (although to be fair it would probably end up being iOS only since that's what we both have). Only time will tell.</p>
 image:
-  url: /images/featured/rinkside.png
+  url: /images/projects/rinkside.png
   title: Rinksi.de
   alt: Rinksi.de
 layout: project
 published: true
 datetime: 2010-12-01 00:00:00 -0500
-date: 01 Dec 2011
+date: 01 Dec 2010
 short:     <p><a href="http://rinksi.de" target="_blank">Rinksi.de</a> is a small project built in RoR that I did with my friend <a href="http://warrendunlop.com" target="_blank">Warren Dunlop</a>. It shows all the outdoor rinks in Ottawa on a map as well as the current condition (as updated by the rink's maintainer).</p>
 title:     Rinksi.de
 website:   http://rinksi.de

@@ -49,18 +49,14 @@ module Jekyll
       if site.layouts.key? 'tag_index'
         dir = site.config['tag_dir'] || 'tag'
         site.tags.keys.each do |tag|
-          puts 'tag: ' + tag
           self.write_tag_index(site, File.join(dir, tag), tag)
         end
         Dir['_projects/*.yml'].each do |path|
-          puts path
           name = File.basename(path, '.yml')
           name = name[3,name.length]
-          puts name
           config = ProjectIndex.new(site, site.source, "/projects/#{name}", path)
           if config.data['published']
             config.data['tags'].each do |t|
-              puts 'project: ' + t
               self.write_tag_index(site, File.join('tag', t), t)
             end
           end

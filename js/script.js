@@ -11,7 +11,8 @@ $(document).ready(function(){
 		$(this).attr('src',$(this).attr('data-origsrc'));
 	});
 	earthquaker();
-
+	
+	/*
 	$('#earthquakereset').live('click', function(){
 		console.log('reset');
 		$('#earthquakereset').hide();
@@ -30,21 +31,38 @@ $(document).ready(function(){
 
 		earthquaker();
 	});
+	*/
 });
 
 function resizestuff() {
-	$('#sidebar').css({
-		height: $('body').height() - $('.mainfooter').height() - $('.mainsubfooter').height()
+	var pageheight = $('body').height() - $('.hero-unit').height() - $('.mainfooter').height() - $('.mainsubfooter').height() - $('header.navbar').height() - ( $('hr').length * 2 ) - 2;
+	var sidebarheight = $('#sidebar').height();
+	if( sidebarheight < pageheight ) {
+		$('#sidebar').css({
+			height: pageheight
+		});
+	}
+	
+	var piw = $('.projectimage').parent().width() - $('#sidebar').width() - 40;
+	if( $('#sidebar').css('display') == 'none' ) piw = $('.projectimage').parent().width() - 20;
+	var pibp = 'center center';
+	if( piw < 1024 ) { pibp = 'left center'; }
+	$('.projectimage').css({
+		width: piw,
+		backgroundPosition: pibp
 	});
 }
 
-resizestuff();
+window.onresize = function(event) {
+	resizestuff();
+}
 
 function earthquaker() {
 	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 	$(document).keydown(function(e) {
 		kkeys.push( e.keyCode );
 		if( kkeys.toString().indexOf( konami ) >= 0 ) {
+			earthquaker();
 			$(document).unbind('keydown',arguments.callee);
 			$('#earthquake').css({
 				'top' : ( $(window).height() / 2 ) - ( $('#earthquake').height() / 2 ),
@@ -57,7 +75,7 @@ function earthquaker() {
 				rumbleEvent: 'constant',
 				reset: 5000
 			});
-			$('#earthquakereset').show();
+			//$('#earthquakereset').show();
 			/* RAINBOWS AND UNICORNS AND SUNSHINE
 			$.getScript('http://www.cornify.com/js/cornify.js',function(){
 				cornify_add();

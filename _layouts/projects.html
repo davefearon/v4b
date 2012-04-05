@@ -18,6 +18,7 @@ title: Projects
 				<span class="pull-right qrcode-no"></span>
 				<h2><a href="{{ site.url }}/projects/{{ project[0] }}">{{ project[1].title }}</a></h2>
 				<h6>Posted on <time datetime="{{ project[1].datetime }}" pubdate>{{ project[1].date }}</h6>
+				<hr>
 			</header>
 			<p>{{ project[1].short }}</p>
 			<hr>
@@ -25,7 +26,7 @@ title: Projects
 				<p class="tags">
 					Tags:
 						{% for tag in project[1].tags %}
-							<a href="/tag/{{ tag }}" class="capitalize">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
+							<a href="{{ site.url }}/tag/{{ tag }}" class="capitalize">{{ tag }}</a>{% if forloop.last != true %}, {% endif %}
 						{% endfor %}
 						<span class="readmore pull-right"><a href="{{ site.url }}/projects/{{ project[0] }}">Read More</a></span>
 				</p>
