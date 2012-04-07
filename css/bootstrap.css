@@ -3,7 +3,9 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 .fourfiftypx {
-	width:450px;
+	/* width:450px; */
+	width:50%;
+	min-width:450px;
 }
 /*!
  * Bootstrap v2.0.2

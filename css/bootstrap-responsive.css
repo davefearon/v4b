@@ -138,10 +138,12 @@
 		margin-top:15px;
  	}
 	.mainfooter {}
-	.mainfooter .fourfiftypx { width:320px; }
+	.mainfooter .fourfiftypx { width:40%; min-width:250px; }
 	.mainfooter .profilepic { display:none; }
 	.mainfooter .fourfiftypx .ml20 { margin-left:0px; }
-	.mainfooter div.pull-right { float:none; }
+	.mainfooter div.pull-right { float:left; }
+	.mainfooter span.pull-right {float:none; display:block;}
+	.mainfooter .fourfiftypx.pull-right { float:left; }
 }
 @media (max-width: 767px) {
   body {
@@ -197,7 +199,7 @@
 		margin-top:15px;
  	}
 	.mainfooter {}
-	.mainfooter .fourfiftypx { float:left; }
+	.mainfooter .fourfiftypx {  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
@@ -390,7 +392,8 @@
     width: 32px;
   }
 	.mainfooter {}
-	.mainfooter .fourfiftypx { float:left; }
+	.mainfooter .fourfiftypx {  }
+	.mainfooter .fourfiftypx.pull-right { width:275px; min-width:275px; }
 }
 @media (max-width: 979px) {
 	.container-fluid > .sidebar {

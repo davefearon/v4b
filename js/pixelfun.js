@@ -1,6 +1,6 @@
 var dummyexperiment = document.getElementById('dummyexperiment');
 var experiment = document.getElementById('experiment');
-var realboxwidth = experiment.offsetWidth - 10;
+var realboxwidth = experiment.offsetWidth - 50;
 var boxwidth = Math.floor(realboxwidth/10) * 10;
 var marginleft = realboxwidth - boxwidth;
 experiment.style.width = boxwidth + "px";
@@ -9,8 +9,8 @@ var boxheight = 300;
 var pixelwidth = 10;
 var pixelheight = 10;
 var numpixels = ( boxwidth * boxheight ) / ( pixelwidth * pixelheight );
-var hiddenmessage = document.getElementById('hiddenmessage');
-hiddenmessage.style.width = boxwidth + 'px';
+//var hiddenmessage = document.getElementById('hiddenmessage');
+//hiddenmessage.style.width = boxwidth + 'px';
 
 var colors = [];
 function firstcolor() {

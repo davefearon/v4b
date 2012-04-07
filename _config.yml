@@ -4,7 +4,7 @@ markdown: maruku
 pagination: true
 paginate: 2
 
-url: http://localhost:4000
+url: http://10.0.1.5:4000
 #url: http://davefearon.com
 title: Dave Fearon [v4]
 author: Dave Fearon
