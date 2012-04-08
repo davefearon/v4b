@@ -12,12 +12,62 @@ image {
   margin: 0 -20px 0 0;
 }
 
-@media (max-device-width: 480px) {
+/*
+@media (max-width: 480px) {
 	.navbar .nav {
 		float:left;
 		margin: 0 0 0 -10px;
 	}
 }
+*/
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) and (max-width: 480px) {
+	.navbar .nav {
+		float:right;
+		margin: 0 -20px 0 0;
+	}
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	.navbar .nav {
+		float:left;
+		margin: 0 0 0 -10px;
+	}
+}
+
+/* iPhone 4 - (portrait) ---------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:portrait), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:portrait),
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:0), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:0),
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:180), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:180) {
+	.navbar .nav {
+		float:left;
+		margin: 0 0 0 -10px;
+	}
+}
+/* iPhone 4 - (landscape) ---------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:landscape), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:landscape),
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:90), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:90),
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:-90), only screen and (min-device-pixel-ratio : 1.5)  and (orientation:-90) {
+	.navbar .nav {
+		float:right;
+		margin: 0 -20px 0 0;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : 90),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : -90) {
+	
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : 0),
+only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : 180) {
+	
+}
+
 
 .hero-unit {
 	background-color: transparent;
@@ -239,15 +289,7 @@ article footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-  /* Style adjustments for viewports 480px and over go here */
 
-}
-
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-
-}
 
 
 

@@ -1,8 +1,8 @@
 <section class="sidebar" id="sidebar">
 	<h2><em>featured</em></h2>
 	<hr>
-	<div class="border10 mb20"><a href="{{ site.url }}/projects/quickqrme"><img src="/images/featured/quickqrme.png"/></a></div>
-	<div class="border10 mb20"><a href="{{ site.url }}/projects/rinkside"><img src="/images/featured/rinkside.png"/></a></div>
-	<div class="border10 mb20"><a href="{{ site.url }}/projects/davefearonv3"><img src="/images/featured/v3.png"/></a></div>
-	<div class="border10 mb20"><a href="{{ site.url }}/projects/gottaplaceit"><img src="/images/featured/gottaplaceit.png"/></a></div>
+	<div class="border10 mb20"><a href="{{ site.url }}/projects/quickqrme"><img src="{{ site.url }}/images/featured/quickqrme.png"/></a></div>
+	<div class="border10 mb20"><a href="{{ site.url }}/projects/rinkside"><img src="{{ site.url }}/images/featured/rinkside.png"/></a></div>
+	<div class="border10 mb20"><a href="{{ site.url }}/projects/davefearonv3"><img src="{{ site.url }}/images/featured/v3.png"/></a></div>
+	<div class="border10 mb20"><a href="{{ site.url }}/projects/gottaplaceit"><img src="{{ site.url }}/images/featured/gottaplaceit.png"/></a></div>
 </section>
