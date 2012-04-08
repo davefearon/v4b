@@ -137,6 +137,7 @@
 		display:block;
 		margin-top:15px;
  	}
+/*
 	.mainfooter {}
 	.mainfooter .fourfiftypx { width:40%; min-width:250px; }
 	.mainfooter .profilepic { display:none; }
@@ -144,6 +145,7 @@
 	.mainfooter div.pull-right { float:left; }
 	.mainfooter span.pull-right {float:none; display:block;}
 	.mainfooter .fourfiftypx.pull-right { float:left; }
+*/
 }
 @media (max-width: 767px) {
   body {

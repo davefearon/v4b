@@ -44,7 +44,7 @@ module Jekyll
       filestring += CACHE_TEMPLATE_FILES
       filestring = fetch_posts(site, filestring)
       filestring = fetch_pages(site, filestring)
-      filestring = fetch_projects(site, filestring)
+      #filestring = fetch_projects(site, filestring)
       filestring = fetch_css(site, filestring)
       filestring = fetch_js(site, filestring)
       filestring = fetch_images(site, filestring)
@@ -90,7 +90,7 @@ module Jekyll
     
     def fetch_css(site, filestring)
       Dir['css/*.css'].each do |path|
-          filestring += "" + path + "\n"
+          filestring += "/" + path + "\n"
       end
       
       filestring
@@ -98,7 +98,7 @@ module Jekyll
     
     def fetch_js(site, filestring)
       Dir['js/*.js'].each do |path|
-          filestring += "" + path + "\n"
+          filestring += "/" + path + "\n"
       end
       
       filestring
@@ -106,11 +106,15 @@ module Jekyll
     
     def fetch_images(site, filestring)
       Dir['images/*.*'].each do |path|
-          filestring += "" + path + "\n"
+          filestring += "/" + path + "\n"
       end
       
       Dir['images/featured/*.*'].each do |path|
-          filestring += "" + path + "\n"
+          filestring += "/" + path + "\n"
+      end
+      
+      Dir['images/projects/*.*'].each do |path|
+          filestring += "/" + path + "\n"
       end
       
       filestring
