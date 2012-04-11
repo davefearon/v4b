@@ -1,5 +1,5 @@
 <section class="sidebar" id="sidebar">
-	<h2><em>featured</em></h2>
+	<h2><em>featured projects</em></h2>
 	<hr>
 	<div class="border10 mb20"><a href="{{ site.url }}/projects/quickqrme"><img src="{{ site.url }}/images/featured/quickqrme.png"/></a></div>
 	<div class="border10 mb20"><a href="{{ site.url }}/projects/rinkside"><img src="{{ site.url }}/images/featured/rinkside.png"/></a></div>

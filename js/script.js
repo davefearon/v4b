@@ -35,7 +35,7 @@ $(document).ready(function(){
 });
 
 function resizestuff() {
-	var pageheight = $('body').height() - $('.hero-unit').height() - $('.mainfooter').height() - $('.mainsubfooter').height() - $('header.navbar').height() - ( $('hr').length * 2 ) - 2;
+	var pageheight = $('body').height() - $('.hero-unit').height() - $('.mainfooter').height() - $('.mainsubfooter').height() - $('header.navbar').height() - ( $('hr').length * 2 ) - 2 + 40;
 	var sidebarheight = $('#sidebar').height();
 	if( sidebarheight < pageheight ) {
 		$('#sidebar').css({

@@ -4,8 +4,11 @@ markdown: maruku
 pagination: true
 paginate: 2
 
-url: http://10.0.1.5:4000
-#url: http://davefearon.com
+#url: http://10.0.1.5:4000
+#url: http://localhost:4000
+#url: http://v4b.dev
+#url: http://davefearon.com/v4
+url: http://davefearon.com
 title: Dave Fearon [v4]
 author: Dave Fearon
 description: the personal site of Dave Fearon

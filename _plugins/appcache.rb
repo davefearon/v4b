@@ -60,7 +60,7 @@ module Jekyll
     
     def fetch_posts(site, filestring)
       site.posts.each do |post|
-        filestring += ( post.url + "\n" )
+        filestring += ( site.config['url'] + post.url + "\n" )
       end
       
       filestring
@@ -68,7 +68,7 @@ module Jekyll
     
     def fetch_pages(site, filestring)
       site.pages.each do |page|
-        filestring += ( page.full_path_to_source + "\n" ) if page.full_path_to_source != "/htaccess"
+        filestring += ( site.config['url'] + page.full_path_to_source + "\n" ) if page.full_path_to_source != "/htaccess"
       end
       
       filestring
@@ -90,7 +90,7 @@ module Jekyll
     
     def fetch_css(site, filestring)
       Dir['css/*.css'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += site.config['url'] + "/" + path + "\n"
       end
       
       filestring
@@ -98,7 +98,7 @@ module Jekyll
     
     def fetch_js(site, filestring)
       Dir['js/*.js'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += site.config['url'] + "/" + path + "\n"
       end
       
       filestring
@@ -106,15 +106,15 @@ module Jekyll
     
     def fetch_images(site, filestring)
       Dir['images/*.*'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += site.config['url'] + "/" + path + "\n"
       end
       
       Dir['images/featured/*.*'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += site.config['url'] + "/" + path + "\n"
       end
       
       Dir['images/projects/*.*'].each do |path|
-          filestring += "/" + path + "\n"
+          filestring += site.config['url'] + "/" + path + "\n"
       end
       
       filestring

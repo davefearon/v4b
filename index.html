@@ -10,8 +10,15 @@ layout: default
 	<h2><em>from the blog</em></h2>
 	<hr>
 	
+	{% assign postCountString = '' %}
 	{% for post in paginator.posts %}
-		{% include frontpage_post %}
+		{% capture temp %}{{ postCountString }}*{% endcapture %}
+		{% assign postCountString = temp %}
+		{% if postCountString.size == 1 %}
+			{% include frontpage_mainpost %}
+		{% else %}
+			{% include frontpage_post %}
+		{% endif %}
 	{% endfor %}
 	
 </section>
