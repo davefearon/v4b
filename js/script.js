@@ -86,10 +86,15 @@ function earthquaker() {
 	});
 }
 
-if( window.applicationCache ) {
-	applicationCache.addEventListener('updateready', function(){
-		if( confirm('An update is available. Reload now?') ) {
-			window.location.reload();
-		}
-	});
-}
+window.addEventListener('load', function(e) {
+	if( window.applicationCache ) {
+		window.applicationCache.addEventListener('updateready', function(){
+			if( window.applicationCache.status == window.applicationCache.UPDATEREADY ) {
+				window.applicationCache.swapCache();
+				if( confirm('An update is available. Reload now?') ) {
+					window.location.reload();
+				}
+			}
+		}, false);
+	}
+}, false);
